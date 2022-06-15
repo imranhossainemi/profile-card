@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!--<link rel="stylesheet" href="https://fonts.google.com/specimen/Kumbh+Sans">-->
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    h1,h2{
+      font-size: 18px;
+      font-weight: 700;
+      color: hsl(229, 23%, 23%)
+    }
+    h3{
+      font-size: 18px;
+      font-weight: 400;
+      color: hsl(0, 0%, 59%);
+    }
+    h2>span{
+      color: hsl(0, 0%, 59%);
+    }
+    .hr{
+      width: 100%;
+      height: 2px;
+      background: hsl(0, 0%, 59%);
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .container{
+      max-width: 1440px;
+      height: 100vh;
+      background-color: hsl(185, 75%, 39%);
+      background-image: url("images/bg-pattern-top.svg"),url('images/bg-pattern-bottom.svg');
+      background-repeat: no-repeat;
+      background-position: bottom -55% right 49vw, top -90% left 42vw;
+    }
+    .pat1,.pat2{
+      position: fixed;
+    }
+    .pat1{
+      top: -70%;
+      left: -30%;
+    }
+    .pat2{
+      top: 30%;
+      left: 50%;
+      overflow: hidden;
+    }
+    .profile{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .profile-card{
+      border-radius: 10px;
+      width: 350px;
+      background: hsl(0, 0%, 100%);
+    }
+    .profile-card .cover{
+      background-image: url("images/bg-pattern-card.svg");
+      width: 100%;
+      height: 140px;
+      background-repeat: no-repeat;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .profile-img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .profile-img img{
+      border: 5px solid hsl(0, 0%, 100%);
+      border-radius: 50%;
+      position: absolute;
+    }
+    .content{
+      margin-top: 70px;
+    }
+    .profile-details{
+      margin: 30px 0px;
+    }
+    .profile-details .name{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 30px 0px;
+    }
+    .link{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;      
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 
+      <div class="partOne">
+      <div class="pat1">
+        <img src="images/bg-pattern-top.svg" alt="ad">
+      </div>
+    </div>
+     -->
+    
+    <div class="profile partTwo">
+      <div class="profile-card">
+        <div class="cover">
+        </div>
+        <div class="profile-img">
+          <img src="images/image-victor.jpg" alt="profile">
+        </div>
+        <div class="content"> 
+          <div class="profile-details">
+            <div class="name">
+              <h2>Victor Crest
+                <span>26</span>
+              </h2>
+              <h3>London</h3>
+            </div>
+            <div class="hr"></div>
+            <div class="link">
+              <div class="follow">
+                <h2>80k</h2>
+                <h3>Followers</h3>
+              </div>
+              <div class="like">
+                <h2>803K</h2>
+                <h3>Likes</h3>
+              </div>
+              <div class="photo">
+                <h2>  
+                  1.4K
+                </h2>
+                <h3>Photos</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="partThree">
+      <div class="pat2">
+        <img src="images/bg-pattern-bottom.svg" alt="ad">
+      </div>  
+    </div> -->
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Imran Hossain</a>.
+  </div>
+</body>
+</html>
