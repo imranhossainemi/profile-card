@@ -10,17 +10,19 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
     *{
       padding: 0;
       margin: 0;
       box-sizing: border-box;
+      font-family: 'Kumbh Sans', sans-serif;
     }
     h1,h2{
       font-size: 18px;
       font-weight: 700;
       color: hsl(229, 23%, 23%)
     }
-    h3{
+    p{
       font-size: 18px;
       font-weight: 400;
       color: hsl(0, 0%, 59%);
@@ -36,24 +38,12 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
     .container{
-      max-width: 1440px;
-      height: 100vh;
+      min-width: 1440px;
+      height: 720px;
       background-color: hsl(185, 75%, 39%);
-      background-image: url("images/bg-pattern-top.svg"),url('images/bg-pattern-bottom.svg');
+      background-image: url("images/bg-pattern-top.svg"),url("images/bg-pattern-bottom.svg");
       background-repeat: no-repeat;
-      background-position: bottom -55% right 49vw, top -90% left 42vw;
-    }
-    .pat1,.pat2{
-      position: fixed;
-    }
-    .pat1{
-      top: -70%;
-      left: -30%;
-    }
-    .pat2{
-      top: 30%;
-      left: 50%;
-      overflow: hidden;
+      background-position: top -500px left -50px,bottom -550px right -70px;
     }
     .profile{
       width: 100%;
@@ -99,24 +89,33 @@
       align-items: center;
       margin: 30px 0px;
     }
+    .name p{
+      margin-top: 10px;
+    }
     .link{
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      align-items: center;      
+      align-items: center;   
+      margin-top: 20px;   
+      text-align: center;
+    }
+    .link p{
+      font-size: 10px;
+      letter-spacing: 2px;
+      margin-top: 5px;
+    }
+    @media screen and (max-width: 600px) {
+      .container{
+        min-width: 375px;
+        background-position: top -500px left -800px,bottom -600px right -700px;
+
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- 
-      <div class="partOne">
-      <div class="pat1">
-        <img src="images/bg-pattern-top.svg" alt="ad">
-      </div>
-    </div>
-     -->
-    
     <div class="profile partTwo">
       <div class="profile-card">
         <div class="cover">
@@ -127,37 +126,32 @@
         <div class="content"> 
           <div class="profile-details">
             <div class="name">
-              <h2>Victor Crest
-                <span>26</span>
+              <h2>Victor Crest 
+                <span>&nbsp; 26</span>
               </h2>
-              <h3>London</h3>
+              <p>London</p>
             </div>
             <div class="hr"></div>
             <div class="link">
               <div class="follow">
                 <h2>80k</h2>
-                <h3>Followers</h3>
+                <p>Followers</p>
               </div>
               <div class="like">
                 <h2>803K</h2>
-                <h3>Likes</h3>
+                <p>Likes</p>
               </div>
               <div class="photo">
                 <h2>  
                   1.4K
                 </h2>
-                <h3>Photos</h3>
+                <p>Photos</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- <div class="partThree">
-      <div class="pat2">
-        <img src="images/bg-pattern-bottom.svg" alt="ad">
-      </div>  
-    </div> -->
   </div>
   
   <div class="attribution">
